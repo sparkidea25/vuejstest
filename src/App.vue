@@ -2,10 +2,11 @@
   <div class="w-full max-w-xs">
   <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" @submit.prevent="updateFirebase">
   <img alt="Vue logo" src="./assets/logo.png">
+
   <div class="mb-4">
     <label class="block text-gray-700 text-sm font-bold mb-2" for="Name1">
       name1</label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Name1" v-model="Name1">
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Name1" v-model="Name1"> {{ percent }}
 
        <label class="block text-gray-700 text-sm font-bold mb-2" for="Name2">
       name2</label>
@@ -43,9 +44,8 @@ export default class App extends Vue {
     const Name3 = ref()
     const Name4 = ref()
     const Name5 = ref()
-    // const percent = function() {
 
-    // }
+
   
   return {
     Name1,
@@ -53,7 +53,7 @@ export default class App extends Vue {
     Name3,
     Name4,
     Name5
-  } 
+  }
 }
 }
 </script>
