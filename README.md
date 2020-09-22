@@ -1,4 +1,4 @@
-# learnvuejs3
+# Vuejs test
 
 ## Project setup
 ```
